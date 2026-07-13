@@ -5,3 +5,7 @@ __pycache__/
 .ipynb_checkpoints/
 02_dataset
 06_Legacy
+03_Notebooks/00_Self Retraining.txt
+05_Complete_19_Class_Training/05_Augmentor.py
+01_app/app.py
+01_app/.streamlit/secrets.toml
