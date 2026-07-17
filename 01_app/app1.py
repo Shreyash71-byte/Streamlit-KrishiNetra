@@ -236,14 +236,14 @@ st.markdown(f"""
         border: 1px solid var(--border);
         margin-top: 16px;
     }}
-    .ledger-row {{
+    .ledger-card .ledger-row {{
         display: flex;
         justify-content: space-between;
         padding: 6px 0;
         font-size: 13px;
         border-bottom: 1px dashed var(--border);
     }}
-    .ledger-row:last-child {{ border-bottom: none; }}
+    .ledger-card .ledger-row:last-child {{ border-bottom: none; }}
     .ledger-key {{ color: var(--text-muted) !important; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.3px; font-weight: 500; }}
     .ledger-val {{ color: var(--text) !important; font-weight: 600; font-family: 'IBM Plex Mono', monospace; }}
 
@@ -391,6 +391,9 @@ st.markdown(f"""
     }}
 
     hr {{ border-color: var(--border) !important; }}
+    
+    /* Chhupaane ke liye default Streamlit profile footer */
+    footer {{ visibility: hidden !important; }}
     </style>
 """, unsafe_allow_html=True)
 
@@ -407,7 +410,6 @@ plant_choice = st.sidebar.selectbox(
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- #
 
 HF_REPO_ID = "Sanchal-01/krishi_netra-models"
-
 
 MODEL_MAP = {
     "Apple": {
@@ -433,10 +435,6 @@ MODEL_MAP = {
 }
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- #
-
-# @st.cache_resource
-# def load_expert_model(path):
-#     return tf.keras.models.load_model(path)
 
 @st.cache_resource
 def load_expert_model(filename):
@@ -464,9 +462,6 @@ st.sidebar.markdown("""
     Each plant is served by a purpose-trained model rather than one shared classifier — narrower scope, sharper reads.
     </p>
 """, unsafe_allow_html=True)
-
-
-
 
 # Masthead
 st.markdown("""
@@ -591,4 +586,13 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
+
+st.markdown("""
+    <div style='text-align: center; margin-top: 15px; font-family: "IBM Plex Mono", monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.3px; color: var(--text-muted);'>
+        Developed by 
+        <a href="https://github.com/Sanchal-01" target="_blank" style="color: var(--sage); text-decoration: none; font-weight: 600;">Sanchal Kumar </a> 
+        & 
+        <a href="https://github.com/Shreyash71-byte" target="_blank" style="color: var(--sage); text-decoration: none; font-weight: 600;">Shreyash Kumar Sah</a>
+    </div>
+""", unsafe_allow_html=True)
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- #
