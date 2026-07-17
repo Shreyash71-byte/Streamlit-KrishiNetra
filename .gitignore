@@ -9,3 +9,4 @@ __pycache__/
 05_Complete_19_Class_Training/05_Augmentor.py
 01_app/app.py
 01_app/.streamlit/secrets.toml
+04_Models
