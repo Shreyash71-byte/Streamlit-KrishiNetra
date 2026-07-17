@@ -6,7 +6,7 @@ from streamlit_cropper import st_cropper
 from huggingface_hub import hf_hub_download
 
 # Page setup
-st.set_page_config(page_title="KrishiNetra · Plant Diagnostics", layout="wide", page_icon="🌿")
+st.set_page_config(page_title="KrishiNetra · Plant Diagnostics", layout="wide", page_icon="https://github.com/Sanchal-01/KrishiNetra-AI/blob/main/01_app/Krishinetra_Logo.png?raw=true")
 
 # This is how we have achieve Dark palette below using CSS additionally we have integrated Light mode is a new addition so switching modes doesn't touch a single existing dark-mode color or font-size.
 PALETTES = {
