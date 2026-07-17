@@ -1,7 +1,7 @@
 # KrishiNetra-AI 🌿: Modular Multi-Crop Plant Disease Diagnostics Framework
 
-[![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15+-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.21-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![Keras](https://img.shields.io/badge/Keras-v3-red?logo=keras&logoColor=white)](https://keras.io/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 
@@ -14,6 +14,8 @@ An enterprise-grade Deep Learning system engineered for automated, multi-crop pl
 Modern precision agriculture demands fast, accurate, and scalable disease identification frameworks to mitigate crop loss. Monolithic multi-class models often suffer from inter-class feature confusion when trained simultaneously on botanically diverse crops (e.g., confusing Apple fungal lesions with Tomato bacterial spots).
 
 **KrishiNetra-AI** solves this fundamental bottleneck by introducing a **modular multi-model execution pipeline**. Developed through a structured two-developer collaborative workflow, the system segregates diagnostics into **five independent crop domains — Apple, Grapes, Tomato, Corn, and Potato**. Each crop features its own standalone neural network optimized specifically for its distinct botanical pathologies. By eliminating cross-crop feature contamination and employing a gradual feature-reduction layer, the individual models retain high fine-grained feature sensitivity, resulting in exceptionally stable, production-ready inference — with every one of the five models achieving **90%+ test accuracy**, and four of the five crossing **98%**.
+
+The link to access the complete dataset :
 
 ---
 
@@ -274,7 +276,7 @@ The specialized `predict_and_plot_batch` function normalizes the input matrix, m
   <img src="07_Assets/Tomato Stats/tomato.png">
 </p>
 
-### Corn
+### Corn(Maize)
 <p align="center">
   <img src="07_Assets/Corn Stats/corn.png">
 </p>
